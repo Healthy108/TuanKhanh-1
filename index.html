@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop TK!</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+
+    <link rel="stylesheet" type="text/css" href="style.css">  
+
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> <i><b style="color: black;">SHOP TK </b></i></a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="Search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <div class="fas fa-user" id="login-btn"></div>
+
+    </div>
+
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/1635324238_matongrung,jpg.jpg" width="100px" height="100px" alt="">
+            <div class="content">
+                <h3>Natural Honey</h3>
+                <span class="price">$25.99/-</span>
+                <span class="quantity">qty: 1</span>
+
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/img-3.jpg" width="100px" height="100px" alt="">
+            <div class="content">
+                <h3>Forest Honey</h3>
+                <span class="price">$20.00/-</span>
+                <span class="quantity">qty: 2</span>
+
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i> 
+            <img src="images/arrival-2.jpg" width="100px" height="100px" alt="">
+            <div class="content">
+                <h3>Coffee Honey</h3>
+                <span class="price">$26.01/-</span>
+                <span class="quantity">qty: 1</span>
+
+            </div>
+        </div>
+
+
+        <div class="total">Total : $92.00/-</div>
+        <a href="#" class="btn">Checkout</a>
+
+    </div>
+
+
+    <form action="" class="login-form">
+        <h3>Login now</h3>
+        <input type="email" placeholder="Your email.." class="box">
+        <input type="password" placeholder="Password.." class="box">
+        <p>Forget your password <a href="#">Click here!</a></p>
+        <p>Don't have an account <a href="#">Create now!</a></p>
+        <input type="" value="Login" class="btn">
+    </form>
+
+
+</header>
+
+<!-- navbar section  -->
+
+<nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="#home">home</a>
+    <a href="#shop">shop</a>
+    <a href="#gallery">gallery</a>
+    <a href="#products">produts</a>
+    <a href="#blogs">blogs</a>
+</nav>
+
+<!-- navbar section  -->
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="slide active">
+        <div class="content">
+            <img src="images/1635324238_matongrung,jpg.jpg" alt="">
+            <span>new arrivals 2022</span>
+            <h3>natural honey</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/1635324238_matongrung,jpg.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="images/mat-ong-quat-tam-dao-1-1.jpg" alt="">
+            <span>new arrivals 2022</span>
+            <h3>forest honey</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/mat-ong-quat-tam-dao-1-1.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="images/mat-ong-hoa-ca-phe-1kg-3.jpg" alt="">
+            <span>new collections</span>
+            <h3>Coffee Honey</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/mat-ong-hoa-ca-phe-1kg-3.jpg" alt="">
+        </div>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- category section starts  -->
+
+<section class="category">
+
+    <a href="#" class="box">
+        <img src="images/nhan-mat-ong-1.jpg" alt="">
+        <p>import</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/mat-ong-hoa-nhan.jpg" alt="">
+        <p>natural</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/mat-ong-ngam-gung-1.jpg" alt="">
+        <p>Ginger</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/1547520209_dsc_8724.jpg" alt="">
+        <p>Coffee</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/mat-ong-quat-tam-dao.jpg" alt="">
+        <p>Honeco</p>
+    </a>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="contentread">
+        <span>Why should you use honey?</span>
+        <h3>Honey has so many benefits</h3>
+        <p>Honey contains nutrients that are beneficial for health, Raw honey is rich in antioxidants, The antioxidants in honey are good for heart health, Honey helps heal wounds quickly, Everything is great!!!.</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- shop section starts  -->
+
+<section class="shop" id="shop">
+
+    <div class="heading">
+        <h1 class="titleh1">featured products</h1>
+        <p>Everything is great !!!</p>
+        <p style="color: red;  font-size: 50px; margin-top: -35px;">♥♥♥</p>
+    </div>
+
+    <div class="swiper products-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-15%</span>
+                    <img src="images/mat-ong.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Great products</p>
+                    <div class="price">$39.99 <span>$49.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-19%</span>
+                    <img src="images/mat-ong-nguyen-chat-lavender-bo-do-nha-lo-500g.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Good products</p>
+                    <div class="price">$25.00 <span>$45.00</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-22%</span>
+                    <img src="images/mat-ong-blackberry-lo-500g-nhap-khau-tu-uc.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/mat-ong-hoa-rung-tam-dao860g.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Big products</p>
+                    <div class="price">$30.99 <span>$59.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/5.jpg.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/6.jpg.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/7.jpg.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/8.jpg.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- shop section ends -->
+
+<!-- gallery section starts  -->
+
+
+
+
+<section class="gallery" id="gallery">
+
+    <div class="heading">
+        <h1 class="titleh1">our gallery</h1>
+        <p>WELLCOME</p>
+    </div>
+
+    <div class="lightbox">
+        <a href="images/img-2.jpg"><img src="images/img-2.jpg" alt=""></a>
+        <a href="images/img-1.jpg"><img src="images/img-1.jpg" alt=""></a>
+        <a href="images/img-3.jpg"><img src="images/img-3.jpg" alt=""></a>
+        <a href="images/img-4.jpg"><img src="images/img-4.jpg" alt=""></a>
+        <a href="images/img-5.jpg"><img src="images/img-5.jpg" alt=""></a>
+        <a href="images/img-6.jpg"><img src="images/img-6.jpg" alt=""></a>
+    </div>
+
+</section>
+
+
+
+<!-- gallery section ends -->
+
+
+<!-- arrivals section starts  -->
+
+<section class="arrivals" id="products">
+
+    <div class="heading">
+        <h1 class="titleh1">new products</h1>
+        <p>New products are regularly updated</p>
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>Honeco honey</p>
+                    <div class="price">$41.99 <span>$78.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>Omanly Honey</p>
+                    <div class="price">$42.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>Tam Dao Honey</p>
+                    <div class="price">$43.99 <span>$80.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>yogurt honey</p>
+                    <div class="price">$44.99 <span>$81.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>Mota Honey</p>
+                    <div class="price">$45.99 <span>$82.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>Honeco Honey</p>
+                    <div class="price">$46.99 <span>$83.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>New Honey</p>
+                    <div class="price">$47.99 <span>$84.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>mint honey</p>
+                    <div class="price">$48.99 <span>$85.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+    
+</section>
+
+<!-- arrivals section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews">
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">great shop, I have used your product and feel very satisfied, worth 100 points.. I will come back and support the shop !</p>             
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="info">
+                        <h3>Gina OyaTa</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">I love the shop so much, everything is so great !</p>
+                <p class="text">Hihi !</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="info">
+                        <h3>Dum Puck</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">You should try it out, because it's really helpful for you.</p>
+                <p class="text">I love mint honey</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="info">
+                        <h3>Bater Bie</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">great shop, I have used your product and feel very satisfied, worth 100 points.. I will come back and support the shop !</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-5.png" alt="">
+                    <div class="info">
+                        <h3>Tom Jen</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">great shop, I have used your product and feel very satisfied, worth 100 points.. I will come back and support the shop ! You should try it out, because it's really helpful for you.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-6.png" alt="">
+                    <div class="info">
+                        <h3>Min he</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">great shop, I have used your product and feel very satisfied, worth 100 points.. I will come back and support the shop !</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- reviews section ends  -->
+
+<!-- service section starts  -->
+
+<section class="service">
+
+    <div class="box">
+        <img src="images/service-1.png" alt="">
+        <h3>free shipping</h3>
+        <p>Buying and selling everything becomes easier and more convenient</p>
+    </div>
+
+    <div class="box">
+        <img src="images/service-2.png" alt="">
+        <h3>secure payment</h3>
+        <p>We always put the safety of our customers first, as convenient as possible</p>
+    </div>
+
+    <div class="box">
+        <img src="images/service-3.png" alt="">
+        <h3>24/7 support</h3>
+        <p>Enthusiastic team of guides, experienced in customer care</p>
+    </div>
+
+</section>
+
+<!-- service section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <div class="heading">
+        <h1 class="titleh1">our daily blogs</h1>
+        <p>A fun and useful place to talk everyday!!!</p>
+    </div>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by user </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 25st december, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Shop my Love</h3>
+                    <p>Everything in here is interesting, let's explore with me !!</p>               
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by user </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21st may, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Great effect!</h3>
+                    <p>Everything in here is interesting, let's explore with me !!</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21st may, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>useful products</h3>
+                    <p>Everything in here is interesting, let's explore with me !!</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21st may, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>blog title goes</h3>
+                    <p>Everything in here is interesting, let's explore with me !!</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-5.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21st may, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>blog title goes</h3>
+                    <p>Everything in here is interesting, let's explore with me !!</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-6.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21st may, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>blog title goes</h3>
+                    <p>Everything in here is interesting, let's explore with me !!</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="link" href="#home"> <i class="fas fa-angle-right"></i> home</a>
+            <a class="link" href="#shop"> <i class="fas fa-angle-right"></i> shop</a>
+            <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> gallery</a>
+            <a class="link" href="#products"> <i class="fas fa-angle-right"></i> products</a>
+            <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i> blogs</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my order </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my favorite </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my wishlist </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> private policy </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> terms of use </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a class="link"> <i class="fas fa-phone"></i> +84-368-699-131 </a>
+            <a class="link"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a class="link"> <i class="fas fa-envelope"></i> khanhk10.195@eaut.edu.vn </a>
+            <a class="link"> <i class="fas fa-map"></i> tuyen quang, viet nam 300000 </a>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="Enter your email" id="" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>tuan khanh</span> !</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+<!-- custom js file link      -->
+<script src="script.js"></script>
+
+<script>
+    lightGallery(document.querySelector('.gallery .lightbox'));
+</script>
+    
+</body>
+</html>
