@@ -514,7 +514,8 @@ section {
 }
 
 .about {
-  background: url("http://media.doisongphapluat.com/426/2015/4/27/mat-ong.jpg") no-repeat;
+/*   background: url("http://media.doisongphapluat.com/426/2015/4/27/mat-ong.jpg") no-repeat; */
+  background: lightyellow;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
